@@ -1,0 +1,13 @@
+{
+  "name": "RAKSHAK: National Security & Intelligence Node",
+  "description": "Government of India's secure surveillance and interception platform for criminal vehicle tracking and automated threat assessment.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "Nationwide Surveillance",
+    "Automated Threat Intelligence",
+    "Jurisdictional Interdiction Protocols",
+    "Strategic Movement Prediction"
+  ]
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-rakshak-bg: #F0F2F5; /* Neutral official background */
+  --color-rakshak-ink: #002147; /* Navy Blue - Authoritative */
+  --color-rakshak-accent: #E06000; /* National Saffron - Alerts */
+  --color-rakshak-panel: #FFFFFF;
+  --color-rakshak-line: rgba(0, 33, 71, 0.12);
+}
+
+body {
+  background-color: var(--color-rakshak-bg);
+  color: var(--color-rakshak-ink);
+  font-family: var(--font-sans);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-rakshak-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-rakshak-ink);
+  border-radius: 3px;
+}
+
+.technical-grid {
+  background-image: linear-gradient(var(--color-rakshak-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-rakshak-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Map Label Enhancement */
+.leaflet-tile-pane {
+  filter: contrast(1.1) brightness(0.95);
+}
+
+.leaflet-layer:last-child {
+  /* This targets the labels layer if it's the last one */
+  filter: contrast(1.5) saturate(1.2);
+}
+
